@@ -1,1 +1,0 @@
-vorgehensweise case study
