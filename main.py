@@ -19,6 +19,8 @@ if tabs == "Geräte-Verwaltung":
     if st.button("Gerät speichern"):
         st.write(f"Gerät '{device_name}' wurde gespeichert.")
 
+
+
     st.subheader("Gerät ändern")
     device_list = ["Laser-Cutter", "3D-Drucker", "Fräsmaschine"]
     selected_device = st.selectbox("Gerät auswählen", device_list)
@@ -63,8 +65,11 @@ elif tabs == "Wartungs-Management":
     for main in maintenances:
         st.write(f"Gerät: {main['Gerät']}, Datum: {main['Datum']}, Kosten: {main['Kosten']}")
 
+
+
     st.subheader("Wartungskosten anzeigen")
     selected_device = st.selectbox("Gerät auswählen", ["Laser-Cutter", "3D-Drucker", "Fräsmaschine"], key="maintenance")
     maintenance_cost = st.number_input("Wartungskosten eingeben (EUR)", min_value=0)
     if st.button("Kosten speichern"):
         st.write(f"Wartungskosten für '{selected_device}' wurden auf {maintenance_cost} EUR gesetzt.")
+#test
