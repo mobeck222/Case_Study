@@ -5,15 +5,15 @@ st.title("Geräteverwaltungssoftware für Hochschulen")
 
 # Navigation für die Module
 tabs = st.sidebar.radio("Navigation", [
-    "Geräte-Verwaltung",
-    "Nutzer-Verwaltung",
+    "Geräteverwaltung",
+    "Nutzerverwaltung",
     "Reservierungssystem",
     "Wartungs-Management"
 ])
 
 # Geräte-Verwaltung
-if tabs == "Geräte-Verwaltung":
-    st.header("Geräte-Verwaltung")
+if tabs == "Geräteverwaltung":
+    st.header("Geräteverwaltung")
     st.subheader("Gerät anlegen")
     device_name = st.text_input("Gerätename eingeben")
     if st.button("Gerät speichern"):
@@ -27,8 +27,8 @@ if tabs == "Geräte-Verwaltung":
         st.write(f"Gerät '{selected_device}' wurde in '{new_name}' umbenannt.")
 
 # Nutzer-Verwaltung
-elif tabs == "Nutzer-Verwaltung":
-    st.header("Nutzer-Verwaltung")
+elif tabs == "Nutzerverwaltung":
+    st.header("Nutzerverwaltung")
     st.subheader("Nutzer anlegen")
     user_name = st.text_input("Nutzername eingeben")
     if st.button("Nutzer speichern"):
